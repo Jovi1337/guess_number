@@ -2,7 +2,13 @@ import random
 # random 是一個模組 (module)
 # 很多個 module 就變成 package套件 (import 的時候可以整個套件裝進去，或是選擇單一模組) 
 
-r = random.randint(1, 100)
+start = input('請決定隨機數字開始的範圍')
+end = input('請決定隨機數字結束的範圍')
+
+start = int(start)
+end = int(end)
+
+r = random.randint(start, end)
 # randint = random integer
 
 count = 0 	# 猜了幾次
